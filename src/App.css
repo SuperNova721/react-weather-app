@@ -3,10 +3,9 @@
 }
 
 .App .container {
-  display: inline-flex;
-  justify-content: center;
+  display: block;
   border: 2px solid black;
-  width: 700px;
+  width: 600px;
   height: 350px;
   border-radius: 10px;
 }

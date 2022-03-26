@@ -1,0 +1,21 @@
+.weather .current-weather {
+  text-align: center;
+  width: 600px;
+}
+
+.weather h2 {
+  font-size: 65px;
+  margin-top: 30px;
+  height: 30px;
+  width: auto;
+  line-height: 15px;
+}
+
+.weather ul {
+  margin-top: 15px;
+  padding-left: 0;
+  line-height: 20px;
+}
+.weather li {
+  list-style-type: none;
+}
