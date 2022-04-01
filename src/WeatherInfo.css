@@ -1,17 +1,14 @@
-.weatherinfo h2 {
-  font-size: 65px;
-  margin-top: 30px;
+.weatherinfo h1 {
+  font-size: 95px;
+  margin-top: 55px;
   height: 30px;
   width: auto;
-  line-height: 15px;
-}
-
-.weatherinfo li {
-  list-style-type: none;
+  line-height: 0px;
+  padding-bottom: 40px;
 }
 
 .weatherinfo img {
-  margin-top: -45px;
+  margin-top: -40px;
 }
 
 .weatherinfo ul {
@@ -19,32 +16,15 @@
   line-height: 20px;
 }
 
+.weatherinfo li {
+  list-style-type: none;
+}
+
 .weatherinfo .weather-image-info {
   padding-right: 0;
-  margin-top: -43px;
+
   text-align: right;
-}
-
-.weatherinfo .current-temperature {
-  display: inline-block;
-  margin-top: 40px;
-  font-size: 70px;
-  font-weight: bold;
-}
-
-.weatherinfo .units {
-  position: relative;
-  top: -38px;
-}
-
-.weatherinfo .metric {
-  display: inline-block;
-  font-size: 16px;
-}
-
-.weatherinfo .fehrenheit a {
-  display: inline-flex;
-  text-decoration: none;
+  height: 65px;
 }
 
 .weatherinfo .weather-status {

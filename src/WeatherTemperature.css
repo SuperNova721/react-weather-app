@@ -1,0 +1,28 @@
+.weather-temperature {
+  display: inline-block;
+  margin-top: -45px;
+  justify-content: right;
+  padding-right: 0;
+}
+
+.weather-temperature .current-temperature {
+  display: inline-block;
+  margin-top: 38px;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.weather-temperature .units {
+  position: relative;
+  top: -38px;
+}
+
+.weather-temperature .metric {
+  display: inline-block;
+  font-size: 16px;
+}
+
+.weather-temperature .fehrenheit a {
+  display: inline-flex;
+  text-decoration: none;
+}
