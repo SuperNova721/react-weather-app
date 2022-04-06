@@ -2,8 +2,15 @@ import React from "react";
 import FormattedDate from "./FormattedDate.js";
 import "./WeatherInfo.css";
 import WeatherTemperature from "./WeatherTemperature.js";
+import AdditionalInformation from "./AdditionalInformation.js";
+
 
 export default function WeatherInfo(props) {
+  let windSpeed= props.data.windSpeed;
+  let humidity= props.data.humidity;
+  let feels_like= props.data.feels_like;
+  let extraData=[ windSpeed, humidity, feels_like ];
+  
   return (
     <div className="weatherinfo">
       <div className="current-weather">
@@ -22,13 +29,14 @@ export default function WeatherInfo(props) {
               <li>
                 <FormattedDate date={props.data.date} />
               </li>
+              
               <li className="text-capitalize">{props.data.description}</li>
-              <li>
-                <p className="revolving-weather-info text-capitalize">
-                  Revolving weather info
-                </p>
+              
+              <li className="additional-info text-capitalize">
+                <AdditionalInformation extraData={extraData[0]} />
               </li>
-            </ul>
+              </ul>
+              {/*create a rotation of information:humidity, percipitation, wind*/} 
           </div>
         </div>
       </div>

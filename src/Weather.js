@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 import WeatherInfo from "./WeatherInfo.js";
+import WeatherForcast from "./WeatherForcast"; 
+
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  
   function handleResponse(response) {
     console.log(response.data);
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       city: response.data.name,
       description: response.data.weather[0].description,
@@ -47,6 +51,7 @@ export default function Weather(props) {
           />
           <input className="search-button" type="submit" value="Search" />
         </form>
+        <WeatherForcast coordinates={weatherData.coordinates}/>
       </div>
     );
   } else {
