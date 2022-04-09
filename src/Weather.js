@@ -8,6 +8,7 @@ import WeatherForcast from "./WeatherForcast";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+
   
   function handleResponse(response) {
     console.log(response.data);
@@ -15,9 +16,12 @@ export default function Weather(props) {
       ready: true,
       coordinates: response.data.coord,
       temperature: response.data.main.temp,
+      windSpeed: response.data.wind.speed,
+      humidity: response.data.main.humidity,
+      feels_like: response.data.main.feels_like,
       city: response.data.name,
       description: response.data.weather[0].description,
-      iconURL: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       date: new Date(response.data.dt * 1000),
     });
   }

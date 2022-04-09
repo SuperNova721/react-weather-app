@@ -1,20 +1,33 @@
 .weather-temperature {
-  display: inline-block;
-  margin-top: -45px;
-  justify-content: right;
-  padding-right: 0;
+  width: 170px;
 }
 
 .weather-temperature .current-temperature {
   display: inline-block;
-  margin-top: 38px;
-  font-size: 70px;
+  font-size: 95px;
   font-weight: bold;
+  position: relative;
+  top: -18px;
+
 }
 
 .weather-temperature .units {
   position: relative;
-  top: -38px;
+  top: -75px;
+  font-weight: bold;
+  color:#3e7496;
+  font-size: 25px;
+}
+
+.weather-temperature .fahrenheit-link {
+  text-decoration: none;
+  color:#9ebbce;
+}
+
+.weather-temperature .celsius-link {
+  text-decoration: none;
+  color:#9ebbce;
+  
 }
 
 .weather-temperature .metric {
