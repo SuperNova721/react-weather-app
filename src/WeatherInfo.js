@@ -3,10 +3,10 @@ import FormattedDate from "./FormattedDate.js";
 import "./WeatherInfo.css";
 import WeatherTemperature from "./WeatherTemperature.js";
 import WeatherIcon from "./WeatherIcon.js";
+import AnimatedWeatherData from "./AnimatedWeatherData.js";
 
 
 export default function WeatherInfo(props) {
-  
   
   return (
     <div className="weatherinfo">
@@ -25,8 +25,8 @@ export default function WeatherInfo(props) {
               
               <li className="text-capitalize">{props.data.description}</li>
               
-              <li className="additional-info text-capitalize">
-                
+              <li >
+                <AnimatedWeatherData data={props.data} />
               </li>
               </ul>
               {/*create a rotation of information:humidity, percipitation, wind*/} 
