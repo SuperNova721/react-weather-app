@@ -1,9 +1,9 @@
-.week-forcast p {
+.weatherForecast .five-day-forecast {
     display: inline-block;
-    margin-top: 20px;
-    color: #862730;
+    margin-top: 5px;
+    color: #266363;
+    padding: 0px;
+    font-weight: bold;
+    
 }
 
-.weatherForecast .forecast-temperature-min {
-    opacity: 0.5;
-}

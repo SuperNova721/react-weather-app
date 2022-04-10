@@ -4,20 +4,19 @@
 
 .weather-temperature .current-temperature {
   display: inline-block;
-  font-size: 95px;
-  font-weight: bold;
+  font-size: 65px;
   position: relative;
-  top: -18px;
+  top: -20px;
   padding-left: 10px;
 
 }
 
 .weather-temperature .units {
   position: relative;
-  top: -75px;
+  top: -56px;
   font-weight: bold;
   color:#3e7496;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .weather-temperature .fahrenheit-link {

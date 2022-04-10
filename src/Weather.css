@@ -1,3 +1,8 @@
+.weather {
+    margin-top: 120px;
+}
+
 .weather form {
-    margin-top: 40px;
+    margin-top: -15px;
+    margin-bottom: 10px;
 }

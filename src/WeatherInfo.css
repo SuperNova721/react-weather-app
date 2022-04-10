@@ -1,7 +1,6 @@
 .weatherinfo h1 {
-  font-size: 95px;
-  margin-top: 55px;
-
+  font-size: 65px;
+  margin-top: 5px;
   height: 30px;
   width: auto;
   line-height: 0px;
@@ -11,6 +10,7 @@
 .weatherinfo ul {
   padding: 0;
   line-height: 20px;
+  margin-top: -27px;
 }
 
 .weatherinfo li {
@@ -20,14 +20,18 @@
 .weatherinfo .weather-image-info {
   padding-right: 0;
   text-align: right;
-  height: 75px;
+  margin-top: -10px;
   
+}
+
+.weatherInfo .main-weather-icon {
+  display: inline-block;
 }
 
 .weatherinfo .weather-status {
   text-align: left;
   padding-left: 20px;
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 .weatherinfo .additional-info {
